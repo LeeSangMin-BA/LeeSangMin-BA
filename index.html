@@ -14,7 +14,7 @@
 <body>
     <section class="section">
         <h1 class="title">HW2W 머신러닝 서비스 만들기</h1>
-        <h2 class="subtitle">데이터과학부 18016069 이상민</h2>
+        <h2 class="subtitle">사진 분류 머신러닝 서비스 - 18016069 이상민</h2>
     </section>
 
     <div class="mt-3 container file-upload">
@@ -108,7 +108,7 @@
         async function predict() {
             var dic_class2information = {};
             dic_class2information['유진'] = 'IVE의 멤버';
-            dic_class2information['장원영'] = 'IVE의 멤버';
+            dic_class2information['장원영'] = 'IVE의 멤버.';
             dic_class2information['제니'] = 'BLACKPINK의 멤버';
             var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);
